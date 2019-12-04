@@ -13,7 +13,8 @@
                 <label for="">Password</label>
                 <input formControlName="password" type="text" class="form-control" placeholder="" aria-describedby="helpId">
             </div>
-            <button (click)="Login()" type="button" class="btn btn-outline-primary btn-lg btn-block">Login</button>
+            <button *ngIf="login.valid" (click)="Login()" type="button" class="btn btn-outline-primary btn-lg btn-block">Login</button>
         </div>
+        <a routerLink="/registro">crear nuevo usuario</a>
     </div>
 </div>
